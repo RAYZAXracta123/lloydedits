@@ -1,0 +1,181 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lloyd Edits – Video Editor</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #0f0f0f;
+      color: #fff;
+      overflow-x: hidden;
+      scroll-behavior: smooth;
+    }
+    .background {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      overflow: hidden;
+      z-index: -1;
+    }
+    .circle {
+      position: absolute;
+      border-radius: 50%;
+      background: radial-gradient(circle, #ff0080aa, #7928caaa);
+      animation: float 10s infinite ease-in-out;
+    }
+    .circle:nth-child(1) { width: 200px; height: 200px; top: 10%; left: 5%; }
+    .circle:nth-child(2) { width: 300px; height: 300px; top: 60%; left: 70%; }
+    .circle:nth-child(3) { width: 150px; height: 150px; top: 80%; left: 20%; }
+
+    @keyframes float {
+      0% { transform: translateY(0px); }
+      50% { transform: translateY(-30px); }
+      100% { transform: translateY(0px); }
+    }
+
+    header {
+      padding: 100px 20px 60px;
+      text-align: center;
+      position: relative;
+      z-index: 1;
+    }
+
+    header h1 {
+      font-size: 3.5em;
+      text-shadow: 0 0 15px #ff00ff;
+      margin-bottom: 0.3em;
+      animation: glow 2s infinite alternate;
+    }
+
+    @keyframes glow {
+      from { text-shadow: 0 0 10px #ff00ff; }
+      to { text-shadow: 0 0 25px #ffffff; }
+    }
+
+    header .typing {
+      font-size: 1.2em;
+      max-width: 800px;
+      margin: auto;
+      line-height: 1.7;
+      color: #ddd;
+      white-space: pre-line;
+    }
+
+    nav {
+      margin-top: 30px;
+    }
+
+    nav a {
+      color: #fff;
+      margin: 0 20px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1em;
+      padding: 8px 16px;
+      border-radius: 20px;
+      background: rgba(255, 255, 255, 0.05);
+      transition: 0.3s ease;
+    }
+
+    nav a:hover {
+      background: rgba(255, 255, 255, 0.2);
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .glass {
+      background: rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(15px);
+      border-radius: 20px;
+      padding: 30px;
+      box-shadow: 0 0 30px #ff00ff33;
+      margin-bottom: 40px;
+    }
+
+    h2 {
+      font-size: 2em;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    footer {
+      background: #111;
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+      color: #aaa;
+    }
+  </style>
+</head>
+<body>
+
+<div class="background">
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+</div>
+
+<header>
+  <h1>Lloyd Edits</h1>
+  <div class="typing">
+    I’m <strong>Lloyd Daniel</strong>, an ambitious upcoming photo and video editor.  
+    I’ve got my own sort of inspiration — I don’t know how,  
+    but everything in me feels like it evolves around art.  
+    And art... ooooh, it’s my thing.
+  </div>
+  <nav>
+    <a href="#portfolio">Portfolio</a>
+    <a href="#services">Services</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section id="portfolio" class="glass">
+  <h2>My Work</h2>
+  <p style="text-align:center;">A glimpse of my creative style — your photo and video edits will go here.</p>
+</section>
+
+<section id="services" class="glass">
+  <h2>Services</h2>
+  <ul>
+    <li>🎬 YouTube Video Editing</li>
+    <li>📱 TikTok & Instagram Reels</li>
+    <li>🎵 Music Video Transitions</li>
+    <li>🎨 Color Grading & Effects</li>
+  </ul>
+</section>
+
+<section id="about" class="glass">
+  <h2>About Me</h2>
+  <p style="text-align:center;">
+    I’m not just editing — I’m storytelling through cuts, transitions, music, and light.  
+    Let me bring your content to life with style and soul.
+  </p>
+</section>
+
+<section id="contact" class="glass">
+  <h2>Contact Me</h2>
+  <p style="text-align:center;">Email: <strong>lloyddaniel003@gmail.com</strong></p>
+  <p style="text-align:center;">WhatsApp: <strong>+254 798 110 308</strong></p>
+  <p style="text-align:center;">
+    <a href="https://wa.me/254798110308" style="color:#ff80ff; text-decoration: underline;" target="_blank">
+      📲 Chat with me on WhatsApp
+    </a>
+  </p>
+</section>
+
+<footer>
+  &copy; 2025 Lloyd Edits. All rights reserved.
+</footer>
+
+</body>
+</html>
